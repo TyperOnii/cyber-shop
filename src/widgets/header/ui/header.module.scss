@@ -1,0 +1,50 @@
+@use '@/shared/styles/media.scss';
+
+.header {
+    background-color: var(--c-white);
+    padding-block: 16px;
+    border-bottom: 1px solid var(--c-grey);
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainMenuList {
+    display: flex;
+    column-gap: 52px;
+
+    &Item:hover {
+        opacity: 1;
+    }
+
+    @include media.tablet {
+        column-gap: 26px;
+    }
+
+    @include media.mobile {
+        display: none;
+    }
+}
+
+
+.secondaryMenuList {
+    display: flex;
+    column-gap: 24px;
+
+    @include media.tablet {
+        column-gap: 16px;
+    }
+
+    @include media.mobile {
+        display: none;
+    }
+}
+
+.search {
+    @include media.mobile {
+        display: none;
+    }
+}

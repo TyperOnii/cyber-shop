@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    color: var(--c-black);
+    background-color: white;
+    font-family: var(--font-geist-inter);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+main {
+    flex: 1 0 auto;
+}

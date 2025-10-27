@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Cascadia_Code } from "next/font/google";
+import { Inter } from "next/font/google";
+import { Header } from "@/widgets/header";
+import '../shared/styles/index.scss'
+import { Footer } from "@/widgets/footer";
 
-const geistCascadiaCode = Cascadia_Code({
-  variable: "--font-geist-sans",
+const geistInter = Inter({
+  variable: "--font-geist-inter",
   subsets: ["latin"],
 });
 
@@ -19,8 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistCascadiaCode.variable} antialiased`}>
-        {children}
+        className={`${geistInter.variable} antialiased`}>
+        <div className='wrapper'>
+          <Header/>
+          <main>
+            {children}  
+          </main>
+          <Footer/>
+        </div>
       </body>
     </html>
   );

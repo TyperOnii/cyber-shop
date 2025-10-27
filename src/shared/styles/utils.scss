@@ -1,0 +1,11 @@
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    padding-inline: var(--container-padding-x);
+    margin-inline: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

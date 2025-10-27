@@ -1,0 +1,11 @@
+.input {
+    border-radius: 8px;
+    padding: 16px 16px 16px 48px;
+    background-image: url('/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: left 16px center;
+    background-color: var(--c-grey);
+    outline: none;
+    border: none;
+    color: var(--c-grey-dark);
+}
